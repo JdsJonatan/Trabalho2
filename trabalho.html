@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <title>Teste</title>        
+        
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+        <!-- jQuery Mobile -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <!-- jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+
+    <body>
+
+
+        <div data-role="page" id="tela1">
+          <div data-role="main" class="ui-content">
+                          
+            <h1>Sistema de Vendas</h1>
+            
+            <a href="#tela2">Cadastro de Clientes</a>
+            <br>
+            <a href="#tela3">Cadastro de Produtos</a>
+            <br>
+            <!-- LOCAL 1 -->
+            <a href="#tela4">Consulta de Produtos</a>
+                
+                
+  
+		
+            
+          </div>
+        </div> 
+
+
+
+        <div data-role="page" id="tela2">
+          <div data-role="main" class="ui-content">
+              
+            <h1>Cadastro de Clientes</h1>
+            
+            <!-- LOCAL 2 -->
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+    
+                <p>
+    
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+    
+                <p>
+            
+                <label for="receber">Receber emails?</label>
+                <input type="checkbox" data-role="flipswitch" name="receber" id="receber">
+            </form>
+                       
+            <a href="#tela1">Voltar</a>
+            
+          </div>
+        </div> 
+
+
+        <div data-role="page" id="tela3">
+          <div data-role="main" class="ui-content">
+              
+            <h1>Cadastro de Produtos</h1>
+            
+            <!-- LOCAL 3 -->            
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+    
+                <p>
+    
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" id="descricao">
+                                                
+            </form>
+                
+                
+            <a href="#tela1">Voltar</a>
+            
+          </div>
+        </div>     
+
+
+        <!-- LOCAL 4 -->
+        <div data-role="page" id="tela4">
+          <div data-role="main" class="ui-content">
+            <h1>Consulta de Produtos</h1>
+                <form>
+                     <label for="nome">Nome:</label>
+                     <input type="text" name="nome" id="nome">
+                </form>
+                <a href="#tela1">Voltar</a>
+        </div>
+          </div>
+
+        
+    </body>
+</html>
